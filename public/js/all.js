@@ -11,10 +11,8 @@ $.get("/api/products", function(data) {
     const productName = $("<td>");
     const productPrice = $("<td>");
     const productQuantity = $("<td>");
-    const Buybttn = $();
+    // const Buybttn = $();
     // const productselection = $("<td");
-
-    // 4. Then give each "letterBtn" a data-attribute called "data-letter".
 
     // 5. Then give each "letterBtns" a text equal to "letters[i]".
     productId.text(data[i].id);
@@ -24,4 +22,6 @@ $.get("/api/products", function(data) {
 
     tablerow.append(productId, productName, productPrice, productQuantity);
 
-    $("#tbody").app
+    $("#tbody").append(tablerow);
+  }
+});
