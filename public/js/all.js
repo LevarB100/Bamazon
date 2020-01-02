@@ -23,5 +23,29 @@ $.get("/api/products", function(data) {
     tablerow.append(productId, productName, productPrice, productQuantity);
 
     $("#tbody").append(tablerow);
+
+    const button = document.querySelector("#submitButton");
+
+    button.addEventListener("click", function() {
+      purchase();
+    });
+
+    const purchase = function makePurchase(product, quantity) {
+      connection.query(
+        "UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?",
+        [quantity, product.item_id],
+        function(err, res) {
+          // Let the user know the purchase was successful, re-run loadProducts
+          console.log(
+            "Successfully purchased " +
+              quantity +
+              " " +
+              product.product_name +
+              "'s!"
+          );
+          loadProducts();
+        }
+      );
+    };
   }
 });
