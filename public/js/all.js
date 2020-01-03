@@ -49,3 +49,15 @@ $.get("/api/products", function(data) {
     };
   }
 });
+
+// The next stages of this application is to:
+
+// -Link the products in the db to a logic that will record the amount of product in the inventory.
+// -Link the products in the db to a logic that will can request and record how much a
+// product a customer wants to purchase. These can be tied to an "on.click" event of the
+// submit button.
+// -The final amount paid by the customer, the final quantity of goods and a thank you message
+// should also be appended to the DOM after the final interaction(on.click event).
+// -Syntax should also be added to be able to detect when the inventory is "out of stock"
+// of a particular product and inform a customer that the product they want to buy is out
+// of stock.

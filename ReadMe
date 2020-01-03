@@ -1,0 +1,33 @@
+WHAT DOES THIS APPLICATION DO:
+This application is supposed to function similar to a online store.
+The application should link to and display a line of products, along with
+the products corresponding price, ID and quatity. THe app should allow a 
+user to purchase as many of an item that is in stock and inform the user 
+if a item they are interested in buying is "out of stock". 
+
+
+WHY IS THIS PROJECT USEFUL:
+This project is useful because it helps the student solidify the mechanics
+of using JQuery to build logic within and application. It also helps the 
+student solidify the process of using routes to allow the back end
+and front end of a application communicate to achieve the objective
+of the programmer and the user.
+
+
+HOW CAN A USER GET STARTED USING THIS APPLICATION:
+A user can get started using this application by accessing the application
+on HEROKU. The link is given below.
+
+
+WHERE CAN USERS GET HELP WITH THIS PROJECT:
+A user can get help with this application by contacting me through either
+HEROKU or GITHUB.
+
+
+WHO MAINTAINS AND CONTRIBUTES THIS PROJECT:
+I am the only person who contributed and maintains this application.
+
+
+THE LINKS FOR THIS APP ARE:
+[Heroku](https://serene-woodland-31496.herokuapp.com/)
+[GITHUB](https://github.com/LevarB100/Bamazon)
