@@ -1,27 +1,39 @@
+//Product model with name, department, price, stock amount
+
 module.exports = function(sequelize, DataTypes) {
-  const Product = sequelize.define("Product", {
+  var Product = sequelize.define("Product", {
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1]
+        len: [1, 140]
       }
     },
-    department_name: {
+
+    department: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1]
+        len: [1, 140]
       }
     },
+
     price: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.FLOAT,
+      allowNull: false,
+      validate: {
+        min: 0.01
+      }
     },
+
     stock_quantity: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        min: 0
+      }
     }
   });
+
   return Product;
 };
