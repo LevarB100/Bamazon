@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/LevarB100/Bamazon#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-path": "^0.3.8",
     "mysql": "^2.17.1",
     "mysql2": "^2.0.1",
